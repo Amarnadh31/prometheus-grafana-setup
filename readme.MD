@@ -1,11 +1,11 @@
 # Prometheus-Grafana Setup
 
-# Prometheus Setup
-# Grafana Setup
+## Prometheus Setup
+## Grafana Setup
 
-# if you want to setup prometheus-Grafana monitoring tool, follow below steps
+## if you want to setup prometheus-Grafana monitoring tool, follow below steps
 
-## Prometheus Setup:
+### Prometheus Setup:
 
 * For explaining purpose i have taken 1 master and 2 agent instances
 * install the prometheus from offical page for the latest version "[Prometheus Official Download](https://prometheus.io/download/)". Below mentioned i'm used version for the setup
