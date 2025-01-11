@@ -1,9 +1,9 @@
 # Prometheus-Grafana Setup
 
-## Prometheus Setup
-## Grafana Setup
+## (Prometheus Setup)
+## (Grafana Setup)
 
-## if you want to setup prometheus-Grafana monitoring tool, follow below steps
+## If you want to setup prometheus-Grafana monitoring tool, follow below steps
 
 ### Prometheus Setup:
 
