@@ -1,6 +1,7 @@
 # Prometheus-Grafana Setup
 
-"[Prometheus Setup]()"
+"[Prometheus Setup]()" \
+
 "[Grafana Setup]()"
 
 ## If you want to setup prometheus-Grafana monitoring tool, follow below steps
