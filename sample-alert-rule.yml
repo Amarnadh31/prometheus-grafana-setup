@@ -1,0 +1,13 @@
+groups:
+- name: InstanceDownAlert
+  labels:
+    team: myteam
+  rules:
+  - alert: InstanceDownAlert
+    expr: up < 1
+    for: 2m
+    keep_firing_for: 5m
+    labels:
+      severity: critical
+    annotations:
+      summary: Instance is down for long time

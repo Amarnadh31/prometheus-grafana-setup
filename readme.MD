@@ -2,7 +2,7 @@
 
 [Prometheus Setup](https://github.com/Amarnadh31/prometheus-grafana-setup/tree/main#prometheus-setup)
 
-[Grafana Setup]()
+[Grafana Setup](https://github.com/Amarnadh31/prometheus-grafana-setup/tree/main#grafana-setup)
 
 ## If you want to setup prometheus-Grafana monitoring tool, follow below steps
 
