@@ -253,3 +253,58 @@ inhibit_rules:
       severity: 'warning'
     equal: [ 'alertname', 'dev', 'instance']
 ```
+- After updating alert manager you need to enable the alert manager in prometheus config file.
+- go to below path in prometheus
+```bash
+cd /opt/prometheus
+```
+open **prometheus.yml** file and comment out the alert manager and alert rules
+```bash
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          - alertmanager_server_public_ip:9093
+
+# Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
+rule_files:
+    - "alerting-rules/*.yaml"
+  # - "first_rules.yml"
+  # - "second_rules.yml"
+```
+### Grafana Setup
+- Download the garafana file from [Garfana official Page](https://grafana.com/docs/grafana/latest/setup-grafana/installation/)
+```bash
+curl -o gpg.key https://rpm.grafana.com/gpg.key
+sudo rpm --import gpg.key
+```
+- Create **/etc/yum.repos.d/grafana.repo** with the following content:
+```bash
+[grafana]
+name=grafana
+baseurl=https://rpm.grafana.com
+repo_gpgcheck=1
+enabled=1
+gpgcheck=1
+gpgkey=https://rpm.grafana.com/gpg.key
+sslverify=1
+sslcacert=/etc/pki/tls/certs/ca-bundle.crt
+```
+- To install Grafana OSS, run the following command:
+```bash
+sudo dnf install grafana
+```
+- To start the service, run the following commands:
+```bash
+sudo systemctl daemon-reload
+sudo systemctl start grafana-server
+```
+- To verify that the service is running, run the following command:
+```bash
+sudo systemctl status grafana-server
+```
+- To configure the Grafana server to start at boot, run the following command:
+```bash
+sudo systemctl enable grafana-server.service
+```
