@@ -308,3 +308,4 @@ sudo systemctl status grafana-server
 ```bash
 sudo systemctl enable grafana-server.service
 ```
+- Check with **public_ip:3000** in browser to access grafana dashboard.
