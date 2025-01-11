@@ -1,6 +1,6 @@
 # Prometheus-Grafana Setup
 
-[Prometheus Setup]()
+[Prometheus Setup](https://github.com/Amarnadh31/prometheus-grafana-setup/tree/main#prometheus-setup)
 
 [Grafana Setup]()
 
